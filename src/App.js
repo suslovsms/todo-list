@@ -1,25 +1,13 @@
 import React from 'react';
+import Footer from "./components/footer/footer";
 import Banner from "./components/banner/banner";
-
-const footetStyle= {
-  padding: "20px",
-  backgroundColor: "#464046",
-  color: "#A2A1A9"
-}
-
-function Footer() {
-  return (
-    <footer style = {footetStyle}>
-      Подвал сайта
-    </footer>
-  );
-}
+import Header from "./components/header/header";
 
 
 function App() {
   return (
     <div>
-      Picture shop
+      <Header/>
       <Banner/>
       <Footer/>
     </div>

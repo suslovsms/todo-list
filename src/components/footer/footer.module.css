@@ -1,0 +1,13 @@
+.container {
+    padding: "20px";
+    background-color: "#464046";
+    color: "#A2A1A9"
+  }
+
+  .caption {
+    background-color: #97B3C2;
+    color: #394053;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+}
