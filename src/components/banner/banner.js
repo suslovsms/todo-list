@@ -1,8 +1,15 @@
+import honda from "./honda.webp"
+import bannerStyle from  "./banner.module.css"
+
 export default function Banner(){
     return (
-      <figure>
-        <img alt="Текст акции"/>
-        <figcaption>Текст акции</figcaption>
+      <figure className={bannerStyle.container}>
+        <img className={bannerStyle.picture}
+        src = {honda}
+        alt="Текст акции"/>
+        <figcaption className={bannerStyle.caption}>
+          Текст акции
+          </figcaption>
       </figure>  
     );
 }
