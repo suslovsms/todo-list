@@ -3,15 +3,29 @@
   
   export default function Header() {
     return (
-      <footer className = {headerStyle.container}>
-        
+      <header className = {headerStyle.container}>
         <figcaption className={headerStyle.caption}>
           <img src = {cafeRacerLogo} 
           className = {headerStyle.picture} 
           alt="Cafe Racer logo"/>
-            CafeRacer shop
+            shop
         </figcaption>
-        
-      </footer>
+
+        <button>
+          Buy
+        </button>
+
+        <button>
+          Sell
+        </button>
+
+        <button>
+          About us
+        </button>
+
+        <button>
+          Contacts us
+        </button>
+      </header>
     );
   }

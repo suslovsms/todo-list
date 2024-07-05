@@ -6,7 +6,7 @@ export default function Banner(){
       <figure className={bannerStyle.container}>
         <img className={bannerStyle.picture}
         src = {honda}
-        alt="Текст акции"/>
+        alt="Это Cafe Racer"/>
         <figcaption className={bannerStyle.caption}>
           Текст акции
           </figcaption>
