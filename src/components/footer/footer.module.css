@@ -1,12 +1,20 @@
 .container {
-    padding: "20px";
-    background-color: "#464046";
-    color: "#A2A1A9"
-  }
+  padding: "20px";
+  background-color: "#464046";
+  color: "#A2A1A9";
+  display: flex;
+  justify-content: flex-start;
+}
 
-  .caption {
-    color: #394053;
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
+
+.list {
+  padding: 10px;
+  color: #394053;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Courier New";
+}
+
+li {
+  list-style-type: none;
 }

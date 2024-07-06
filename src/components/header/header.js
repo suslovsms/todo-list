@@ -11,19 +11,19 @@
             shop
         </figcaption>
 
-        <button>
+        <button className={headerStyle.button}>
           Buy
         </button>
 
-        <button>
+        <button className={headerStyle.button}>
           Sell
         </button>
 
-        <button>
+        <button className={headerStyle.button}>
           About us
         </button>
 
-        <button>
+        <button className={headerStyle.button}>
           Contacts us
         </button>
       </header>

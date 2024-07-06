@@ -1,16 +1,15 @@
 .container {
-    padding: "20px";
-    background-color: "#464046";
-    color: "#A2A1A9";
-    display:flex;
-    justify-content: flex-start
-  }
+  padding: "20px";
+  color: "#A2A1A9";
+  display:flex;
+  justify-content: flex-start
+}
 
-  .caption {
-    color: #394053;
-    padding: 10px;
-    font-size: 20px;
-    background-color: #97B3C2;
+.caption {
+  color: #394053;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #97B3C2;
 }
 
 .picture {
@@ -18,3 +17,13 @@
   height: 50px;
 }
 
+.button {
+  background: #97B3C2;
+  display:flex;
+  align-content: center;
+  flex-grow: 1;
+  border-color: #97B3C2;
+  border-style: solid;
+  align-items: center;
+  justify-content: center;
+}
