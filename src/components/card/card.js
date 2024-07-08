@@ -1,5 +1,5 @@
 export default function Card({pictureData}){
-    if(!pictureData.enable) return null;
+    if(!pictureData.is_done) return null;
     return (
         <div style={{
             padding: "20px",
@@ -10,7 +10,7 @@ export default function Card({pictureData}){
             <h2>{pictureData.title}</h2>
             <div>
                 <img src={pictureData.path}
-                     alt={pictureData.title}/>
+                alt={pictureData.title}/>
             </div>
             <p>{pictureData.price > 100000 ? 
                 "Стоимость необходимо уточнить у продовца" : pictureData.price}
@@ -18,4 +18,4 @@ export default function Card({pictureData}){
             <button>Заказать</button>
         </div>
     )
-}
+    }
