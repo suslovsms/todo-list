@@ -7,7 +7,7 @@ export default [
     description: "Some text",  
     price: 100000, 
     is_done: true,
-    masters: ["Ivan","Alex"],
+    masters: ["Ivan"," Alex"],
     path: "./images/honda.webp"},
 
     {id:2, 
@@ -18,7 +18,7 @@ export default [
     description: "Some text",  
     price: 200000, 
     is_done: true,
-    masters: ["Maksim","Zoy","Leon" ],
+    masters: ["Maksim ","Zoy ","Leon" ],
     path: "./components/images/Harley_davidson.jpeg"},
 
     {id:3, 
@@ -29,7 +29,7 @@ export default [
     description: "Some text",  
     price: 300000, 
     is_done: false,
-    masters: ["Zoy","Leon"],
+    masters: ["Zoy ","Leon "],
     path: "./components/images/BMW.jpeg"},
 
     {id:4, 
@@ -40,7 +40,7 @@ export default [
     description: "Some text",  
     price: 40000, 
     is_done: true,
-    masters: ["Ivan","Leon" ],
+    masters: ["Ivan ","Leon " ],
     path: "./components/images/Triumph.jpg"},
 
     {id:5, 
@@ -51,7 +51,7 @@ export default [
     description: "Some text",  
     price: 500000, 
     is_done: false,
-    masters: ["Maksim"],
+    masters: ["Maksim "],
     path: "./components/images/URAL.jpg"},
 ]
 
