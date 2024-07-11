@@ -1,15 +1,13 @@
+import cardStyleMain from  "./card.module.css"
+
 export default function Card({pictureData}){
-    if(!pictureData.is_done) return null;
+    const cardStyle = pictureData.is_done ? cardStyleMain.cardDisable : cardStyleMain.cardActive
     return (
-        <div style={{
-            padding: "20px",
-            background: "#D8E6EF",
-            borderRadius: "5px",
-            color: "#4406"
-        }}>
+        <div className={cardStyle}>
             <h2>{pictureData.title}</h2>
             <div>
-                <img src={pictureData.path}
+                <img  className={cardStyleMain.picture}
+                src={pictureData.path}
                 alt={pictureData.title}/>
             </div>
             <p> Год выпуска {pictureData.year_of_made} <br/> Дата завершения работ {pictureData.end_date}</p>
@@ -19,8 +17,7 @@ export default function Card({pictureData}){
             <p> Made by {pictureData.masters} <br/> {pictureData.description}</p>
             <button>Заказать</button>
         </div>
-    )
-    }
+    )}
 
 
 function sortByPrice({pictureData}){
