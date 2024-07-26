@@ -20,10 +20,3 @@ export default function Card({pictureData}){
     )}
 
 
-function sortByPrice({pictureData}){
-    const sortedList = [];
-    let i
-    while(i=0, i<=pictureData.price.lenth, i++){
-        
-    }
-}
