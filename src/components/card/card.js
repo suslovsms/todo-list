@@ -1,6 +1,18 @@
 import cardStyleMain from  "./card.module.css"
+import EmptyPicture from "./EmptyPicture.png"
 
-export default function Card({pictureData}){
+
+export function EmptyCard(){
+    return (    
+        <figcaption>
+            <img  className={cardStyleMain.picture}
+            src={EmptyPicture}
+            alt="Empty card"/>
+        </figcaption>
+)}
+
+
+export function Card({pictureData}){
     const cardStyle = pictureData.is_done ? cardStyleMain.cardDisable : cardStyleMain.cardActive
     return (
         <div className={cardStyle}>

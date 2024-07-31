@@ -1,5 +1,5 @@
 import pictures from "../../pictures";
-import Card from "../card/card";
+import {EmptyCard} from "../card/card";
 
 
 export default function PicturesList() {
@@ -11,6 +11,6 @@ export default function PicturesList() {
     });
 
     const picturesCards = 
-        sortedPictures.map(picture => <Card pictureData={picture} />);
+        sortedPictures.map(picture => <EmptyCard pictureData={picture} />);
     return (<div>{picturesCards}</div>);
 }
