@@ -1,10 +1,12 @@
 import cardStyleMain from  "./card.module.css"
 import EmptyPicture from "./EmptyPicture.png"
+import {handlePictureClick} from '../pictureslist/PicturesList'
 
 
 export function EmptyCard(){
+
     return (    
-        <figcaption>
+        <figcaption onClick={handlePictureClick}>
             <img  className={cardStyleMain.picture}
             src={EmptyPicture}
             alt="Empty card"/>

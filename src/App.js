@@ -3,7 +3,7 @@ import "./index.css"
 import Footer from "./components/footer/footer";
 import Banner from "./components/banner/banner";
 import Header from "./components/header/header";
-import PicturesList from './components/pictureslist/PicturesList';
+import {PicturesList} from './components/pictureslist/PicturesList';
 
 
 function App() {

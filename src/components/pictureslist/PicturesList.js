@@ -1,8 +1,12 @@
 import pictures from "../../pictures";
 import {EmptyCard} from "../card/card";
 
+    //функция обработчик события
+export function handlePictureClick(){
+        console.log("clicked")
+    }
 
-export default function PicturesList() {
+export function PicturesList() {
 
     const sortedPictures = pictures.slice().sort((a, b) => {
         const dateA = new Date(a.year_of_made.split('.').reverse().join('-'));
