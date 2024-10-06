@@ -1,20 +1,25 @@
 import React from 'react';
 import "./index.css"
-import Footer from "./components/footer/footer";
-import Banner from "./components/banner/banner";
-import Header from "./components/header/header";
-import Bubble from "./components/bubble/bubble";
-import PicturesList from './components/pictureslist/PicturesList';
+import NavBar from "./components/navBar/NavBar.js";
+import Banner from "./components/banner/banner.js"
+import Questions from "./components/questions/questions.js"
+import SocialMedia from "./components/socialMedia/socialMedia.js"
+import Form from "./components/form/form.js"
+import Footer from "./components/footer/footer.js"
+import Card from "./components/ui-lib/card/card";
+import cardsData from './cardsData.js';
+
 
 
 function App() {
-  return (
+  return ( 
     <div>
-      <Header/>
-      <PicturesList/>
-      <Banner text="текст акции">
-        <Bubble/>
-      </Banner>      
+      <NavBar/>
+      <Banner/>
+      <Questions/>
+      <Card cardsData = "Kazbegi"/>
+      <SocialMedia/>
+      <Form/>
       <Footer/>
     </div>
   );        

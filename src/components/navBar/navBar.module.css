@@ -1,6 +1,7 @@
 .container {
+  position: flex;
   padding: "20px";
-  color: "#A2A1A9";
+  background: rgba(255, 255, 255, 0.8);
   display:flex;
   justify-content: flex-start
 }
@@ -18,12 +19,8 @@
 }
 
 .button {
-  background: #97B3C2;
-  display:flex;
   align-content: center;
-  flex-grow: 1;
-  border-color: #97B3C2;
   border-style: solid;
   align-items: center;
-  justify-content: center;
+  background-color: 'transparent'
 }
