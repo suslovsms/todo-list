@@ -12,7 +12,7 @@
         </figcaption>
 
         <button className={headerStyle.button}>
-          Buy
+          Ebad
         </button>
 
         <button className={headerStyle.button}>
