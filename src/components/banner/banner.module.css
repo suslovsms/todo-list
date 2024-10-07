@@ -1,8 +1,28 @@
 .container {
-    height: 200px;
-    background-color: blue;
+    height: 1%;
+    width: 1%;
     text-align: center;
     color: white;
     display: flex;
     justify-content: center;
+}
+
+
+.background {
+    background-image: url('banner.jpg');
+    background-size: contain; /* Уменьшает изображение, чтобы оно целиком влезло в контейнер, сохраняя пропорции */
+
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px; /* Определи высоту контейнера */
+    width: 200px;  /* Определи ширину контейнера */
+    text-align: center;
+    color: whçite;
+    display: flex;
+    justify-content: center;
+}
+
+
+.picture {
+    height: 100%;
 }

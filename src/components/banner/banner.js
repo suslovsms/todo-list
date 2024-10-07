@@ -3,8 +3,7 @@ import TextCard from "../ui-lib/textCard/textCard"
 
 export default function Banner(){
     return (
-      <div className={bannerStyle.container}>
-        "banner"
+      <div className={bannerStyle.background}>
         <TextCard title = "100+" discription= "уникальных маршрутов"/>
         <TextCard title = "50" discription= "советов по выживанию"/>
         <TextCard title = "2000+" discription= "счастливых туристов"/>
