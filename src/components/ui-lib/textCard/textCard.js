@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function TextCard({ title, description}) {
+export default function TextCard({ title, description, classNameTitle, classNameText}) {
     return (
       <div>
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <div className={classNameTitle}>{title}</div>
+        <div className={classNameText}>{description}</div>
       </div>
     );
 }

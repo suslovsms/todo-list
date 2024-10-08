@@ -4,20 +4,34 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 75vh;
     display: flex;           
     justify-content: center; 
     align-items: flex-end;
 }
 
 
-.text {
-    display: flex;
-    color: white;                 
-    font-size: 14px;             
-    font-weight: bold;               
+.textBlock {
+    display: flex;              
     text-align: center;             
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     background: rgba(0, 0, 0, 0.4); 
-    border-radius: 10px;             
+    border-radius: 50px; 
+    margin-bottom: 10px;
+    min-height: 100px;
+    padding: 0 50px;
+}
+
+.title {
+    color: white; 
+    padding-top: 25px;
+    font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
+}
+
+.text {
+    color: white; 
+    padding: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
 }
