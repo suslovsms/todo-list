@@ -12,7 +12,7 @@ import UserLogo from "../ui-lib/userLogo/userLogo";
             <button className={navBarStyle.button}>Советы</button>
             <button className={navBarStyle.button}>Контакты</button>
           </div>
-        <ToggleButton text="Начать приключения" />
+        <div><ToggleButton text="Начать приключения" /></div>
         </div>
     );
   }
