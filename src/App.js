@@ -7,8 +7,6 @@ import SocialMedia from "./components/socialMedia/socialMedia.js"
 import Form from "./components/form/form.js"
 import Footer from "./components/footer/footer.js"
 import Card from "./components/ui-lib/card/card";
-import cardsData from './cardsData.js';
-
 
 
 function App() {
@@ -16,8 +14,8 @@ function App() {
     <div>
       <NavBar/>
       <Banner/>
-      <Questions/>
       <Card cardsData = "Kazbegi"/>
+      <Questions/>
       <SocialMedia/>
       <Form/>
       <Footer/>

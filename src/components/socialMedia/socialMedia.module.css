@@ -1,4 +1,9 @@
 .container {
-  background-color: aqua;
-  height: 450px;
+  background-color: #cfe1ea;
+  display: flex;
+  padding: 50px;
+  display: inline-flex;;
+  gap: 25px;
+  justify-content: center;
+  width: 100%;
 }

@@ -1,14 +1,12 @@
 import IconSocial from "../ui-lib/iconSocial/iconSocial"
-import UserLogo from "../ui-lib/userLogo/userLogo";
+import socialPicturesData from "./socialPicturesData"
+import socialMedia from "./socialMedia.module.css"
 
 export default function SocialMedia(){
+  const Logo = socialPicturesData.map((item)=>(<IconSocial key = {item.id} src = {item.src}/>))
     return (
-      <div >
-        <IconSocial src="/images/socialImages/free-icon-telegram.png"/>
-        <IconSocial src="/images/socialImages/free-icon-vk.png"/>
-        <IconSocial src="/images/socialImages/free-icon-whatsapp.png"/>
-        <IconSocial src="/images/socialImages/free-icon-youtube.png"/>   
+      <div className={socialMedia.container}>
+        {Logo}
       </div>
-      
     );
 }
