@@ -25,3 +25,7 @@
   padding: 10px;
   font-size: 14px;
 }
+
+.button:hover{
+  transform: translateY(-1px);
+}

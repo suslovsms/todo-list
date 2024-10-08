@@ -1,17 +1,23 @@
-import questionsStyles from  "./questions.module.css"
-import TextCard from "../ui-lib/textCard/textCard"
+import questionsStyles from "./questions.module.css";
+import TextCard from "../ui-lib/textCard/textCard";
+import questionsData from "./textQuestions";
 
-export default function Questions(){
-    return (
-      <div className={questionsStyles.container}>
-        Частно задаваемые вопросы
-        <TextCard title = "Как выбрать идеальный маршрут?" discription= "Сначала определитесь с уровнем сложности и временем. Затем, изучите отзывы и советы от опытных путешественников!"/>
-        <TextCard title = "Что взять с собой в поход?" discription= "Не забудьте про удобную обувь, еду, воду и, конечно, хорошее настроение!"/>
-        <TextCard title = "Как избежать неприятностей в походе?" discription= "Следуйте инструкциям, не забывайте о безопасности и всегда держите связь с группой!"/>
-        <TextCard title = "Можно ли взять с собой домашних животных?" discription= "Да, но только если они не будут мешать вашему приключению!"/>
-        <TextCard title = "Где найти единомышленников для похода?" discription= "На нашем сайте, конечно! Присоединяйтесь к сообществу!"/>
+export default function Questions() {
+  const TextCards = questionsData.map((item) => (
+    <div key={item.id} className={questionsStyles.card}>
+      <TextCard
+        title={item.title}
+        description={item.description}
+        classNameTitle={questionsStyles.title}
+        classNameText={questionsStyles.description}
+      />
+    </div>
+  ));
 
-      </div>
-      
-    );
+  return (
+    <div className={questionsStyles.container}>
+      <h2 className={questionsStyles.heading}>Часто задаваемые вопросы</h2>
+      <div className={questionsStyles.grid}>{TextCards}</div>
+    </div>
+  );
 }
