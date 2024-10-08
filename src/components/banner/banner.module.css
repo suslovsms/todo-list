@@ -5,18 +5,19 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    display: flex;            /* Flexbox для удобного расположения текста */
-    justify-content: center;  /* Центрируем по горизонтали */
-    align-items: flex-end;    /* Располагаем текст внизу */
+    display: flex;           
+    justify-content: center; 
+    align-items: flex-end;
 }
 
 
 .text {
-    color: white;                     /* Белый текст для контраста */
-    font-size: 14px;                  /* Размер текста */
-    font-weight: bold;                /* Жирный текст */
-    text-align: center;               /* Выравнивание текста по центру */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Тень для улучшения читаемости */
-    background: rgba(0, 0, 0, 0.4);   /* Полупрозрачный фон за текстом */
-    border-radius: 10px;              /* Скругление углов для красоты */
-  }
+    display: flex;
+    color: white;                 
+    font-size: 14px;             
+    font-weight: bold;               
+    text-align: center;             
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 10px;             
+}

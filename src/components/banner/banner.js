@@ -7,7 +7,7 @@ export default function Banner(){
     <TextCard 
       key = {item.id}
       title = {item.title}
-      discription = {item.discription}/>
+      description = {item.description}/>
   ))
     return (
       <div className={bannerStyle.background}>

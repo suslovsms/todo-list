@@ -2,17 +2,17 @@ const textCounts = [
     {
         "id": 1,
         "title": "100+",
-        "discription": "уникальных маршрутов",
+        "description": "уникальных маршрутов",
     },
     {
         "id": 2,
         "title": "50",
-        "discription": "советов по выживанию",
+        "description": "советов по выживанию",
     },
     {
         "id": 3,
         "title": "2000+",
-        "discription": "счастливых туристов",
+        "description": "счастливых туристов",
     }
 ]
 export default textCounts;
