@@ -1,13 +1,19 @@
 import bannerStyle from  "./banner.module.css"
 import TextCard from "../ui-lib/textCard/textCard"
+import textCounts from "./textCounts"
 
 export default function Banner(){
+  const TextCards = textCounts.map((item) => (
+    <TextCard 
+      key = {item.id}
+      title = {item.title}
+      discription = {item.discription}/>
+  ))
     return (
       <div className={bannerStyle.background}>
-        <TextCard title = "100+" discription= "уникальных маршрутов"/>
-        <TextCard title = "50" discription= "советов по выживанию"/>
-        <TextCard title = "2000+" discription= "счастливых туристов"/>
+        <div className={bannerStyle.text}>
+          {TextCards}
+        </div>
       </div>
-      
-    );
+    )
 }
