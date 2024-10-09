@@ -6,7 +6,6 @@ export default function UserLogo({ text, image }) {
         <div className={userLogoStyle.logo}>
             <img src={image} alt="User logo" className={userLogoStyle.icon} />
             <span className={userLogoStyle.userName}>{text}</span>
-            
         </div>
         
     );

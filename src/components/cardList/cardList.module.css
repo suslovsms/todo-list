@@ -1,8 +1,12 @@
 .container {
-    height: 200px;
-    background-color: blue;
+    height: fit-content;
+    margin-top: 200px;
+
     text-align: center;
     color: white;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
 }

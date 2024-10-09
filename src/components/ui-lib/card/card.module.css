@@ -1,5 +1,60 @@
 .body {
-    height: 100px;
-    color: black;  
-    background-color: blueviolet;
+    height: fit-content;
+    width: 30%;
+    color: white;
+    background: rgba(0, 0, 0, 0.7); /* Сделал фон чуть темнее для контраста с текстом */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Добавил тень для объема */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Равномерное распределение контента */
+    padding: 20px; /* Отступы внутри */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+}
+
+.body:hover {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Усиленная тень при наведении */
+}
+
+.icon {
+    height: fit-content;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    object-fit: cover; /* Подгоняет изображение по размеру, сохраняя пропорции */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для изображения */
+}
+
+.body div {
+    font-size: 16px; /* Размер текста */
+    margin: 5px 0; /* Небольшие отступы между блоками */
+}
+
+.body div:nth-child(2) {
+    font-size: 20px; /* Более крупный шрифт для заголовка (title) */
+    font-weight: bold;
+}
+
+.body div:nth-child(3),
+.body div:nth-child(4) {
+    color: #ffcc00; /* Желтый цвет для дат */
+}
+
+.body div:nth-child(5) {
+    font-style: italic; /* Курсив для описания (description) */
+    color: #ddd;
+}
+
+.body div:nth-child(6) {
+    color: #ff6600; /* Оранжевый цвет для цены */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.body div:nth-child(7) {
+    font-size: 14px;
+    color: #aaa; /* Более светлый цвет для инструктора */
 }

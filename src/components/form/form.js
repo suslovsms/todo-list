@@ -13,9 +13,6 @@ const Inputs = inputText.map((item) => (<Input
         <div className={formStyle.fields}>
             {Inputs}
         </div>
-
-
-
       </div>
     );
 }
