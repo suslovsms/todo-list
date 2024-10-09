@@ -1,9 +1,8 @@
 import React from 'react';
-import inputStyle from "./input.module.css";
 
-export default function Input({ placeholder }) {
+export default function Input({ placeholder, style }) {
   return (
-    <div>
+    <div className={style}>
        <input placeholder={placeholder}/>
     </div>
   );
