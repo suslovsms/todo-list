@@ -7,7 +7,8 @@ const cards = [
         "description": "Популярный маршрут! Если пойдет дождь, то путешествие станет более запоминающимся! ",
         "price": 15000,
         "instructor": "Kristina",
-        "path": "/images/cardsPictures/legendary30.jpg"
+        "path": "/images/cardsPictures/legendary30.jpg",
+        "tags": ["Kavkaz", "Mountains", "Hike", "Russia"]
     },
     {
         "id": 2,
@@ -17,7 +18,8 @@ const cards = [
         "description": "Задолбаешься подниматься",
         "price": 12000,
         "instructor": "Alexander",
-        "path": "/images/cardsPictures/Kazbegi.jpg"
+        "path": "/images/cardsPictures/Kazbegi.jpg",
+        "tags": ["Kavkaz", "Mountains", "Hike", "Georgia"]
     },
     {
         "id": 3,
@@ -27,7 +29,8 @@ const cards = [
         "description": "Самый топовый маршрут по соотношению траты сил и красоты вокруг",
         "price": 20000,
         "instructor": "Elena",
-        "path": "/images/cardsPictures/chegem.jpeg"
+        "path": "/images/cardsPictures/chegem.jpeg",
+        "tags": ["Kavkaz", "Mountains", "Hike", "Russia"]
     },
     {
         "id": 4,
@@ -37,7 +40,8 @@ const cards = [
         "description": "Главное что бы не сожрали комары",
         "price": 18000,
         "instructor": "Dmitry",
-        "path": "/images/cardsPictures/Belyha.webp"
+        "path": "/images/cardsPictures/Belyha.webp",
+        "tags": ["Altai", "Mountains", "Hike", "Russia"]
     },
     {
         "id": 5,
@@ -47,7 +51,8 @@ const cards = [
         "description": "Главное что бы не сожрали медведи",
         "price": 25000,
         "instructor": "Svetlana",
-        "path": "/images/cardsPictures/Kamchatka.jpg"
+        "path": "/images/cardsPictures/Kamchatka.jpg",
+        "tags": ["Kamchatka", "Mountains", "Hike", "Russia"]
     }
 ]
 

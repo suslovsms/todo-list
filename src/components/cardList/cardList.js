@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from "../ui-lib/card/card";
 import cards from "./cardsData";
-import cardsStyle from "./cardList.module.css"
+import cardsStyle from "./cardList.module.css";
 
-export default function Cards() {
+export function Cards() {
+  const [openCardId, setOpenCardId] = useState(true); 
+
+  function handleCardClick(cardId) {
+    setOpenCardId(prevId => (prevId === cardId ? null : cardId));
+  }
+
   const cardsElements = cards.map((item) => (
-      <Card 
-        key={item.id}
-        date= {`Дата начала: ${item.date}`}
-        end_date= {`Дата окончания: ${item.end_date}`}
-        title={item.title}
-        description={item.description}
-        price={`Цена: ${item.price}`}
-        instructor= {`Instructor: ${item.instructor}`}
-        src={item.path} // путь к изображению
-      />
-    ));
+    <Card 
+      key={item.id}
+      title={item.title}
+      price={`Цена: ${item.price}`}
+      instructor={`Instructor: ${item.instructor}`}
+      date = {`Start date: ${item.date}`}
+      end_date = {`End date: ${item.end_date}`}
+      description = {item.description}
+      src={item.path} 
+      isFull={openCardId === item.id} 
+      onClick={() => handleCardClick(item.id)} 
+    />
+  ));
 
   return (
     <div className={cardsStyle.container}>
@@ -23,4 +31,3 @@ export default function Cards() {
     </div>
   );
 }
-

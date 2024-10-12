@@ -6,7 +6,8 @@ import Questions from "./components/questions/questions.js"
 import SocialMedia from "./components/socialMedia/socialMedia.js"
 import Form from "./components/form/form.js"
 import Footer from "./components/footer/footer.js"
-import Cards from "./components/cardList/cardList.js";
+import { Cards} from "./components/cardList/cardList.js";
+
 
 
 function App() {
