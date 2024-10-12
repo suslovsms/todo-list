@@ -7,14 +7,14 @@ import ToggleButton from '../ui-lib/toggleButton/ToggleButton';
 
 
 export function SearchInputBlock({ onSearch }) {
-  const [inputValue, setInputValue] = useState(""); // Храним значение инпута
+  const [inputValue, setInputValue] = useState(""); 
 
   const handleInputChange = (event) => {
-    setInputValue(event.target.value); // Обновляем состояние при изменении инпута
+    setInputValue(event.target.value); 
   };
 
   const handleSearchClick = () => {
-    onSearch(inputValue); // Передаем введенное значение вверх при клике на кнопку "Найти"
+    onSearch(inputValue); 
   };
 
   return (
@@ -24,13 +24,13 @@ export function SearchInputBlock({ onSearch }) {
         <SearchInput 
           placeholder="like Kavkaz,Mountains,Hike,Russia, Georgia" 
           className={cardsStyle.searchInput}
-          value={inputValue} // Передаем текущее значение
-          onChange={handleInputChange} // Обрабатываем изменение текста
+          value={inputValue} 
+          onChange={handleInputChange} 
         />
         <ToggleButton
           text="Найти"
           className={cardsStyle.searchButton}
-          onClick={handleSearchClick} // Обрабатываем клик на кнопку
+          onClick={handleSearchClick} 
         />
       </div>
     </>
