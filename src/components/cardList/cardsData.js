@@ -10,7 +10,7 @@ const cards = [
         "path": "/images/cardsPictures/legendary30.jpg",
         "tags": ["Kavkaz", "Mountains", "Hike", "Russia"]
     },
-    {
+    { 
         "id": 2,
         "date": "15.04.2025",
         "end_date": "22.04.2025",
@@ -30,7 +30,7 @@ const cards = [
         "price": 20000,
         "instructor": "Elena",
         "path": "/images/cardsPictures/chegem.jpeg",
-        "tags": ["Kavkaz", "Mountains", "Hike", "Russia"]
+        "tags": ["Chegem", "Kavkaz", "Mountains", "Hike", "Russia"]
     },
     {
         "id": 4,
