@@ -1,9 +1,21 @@
 import React from 'react';
 
-export default function Input({ placeholder, style }) {
+export function Input({ placeholder, style }) {
   return (
     <div className={style}>
-       <input placeholder={placeholder}/>
+      <input placeholder={placeholder}/>
     </div>
+  );
+}
+
+export function SearchInput({ placeholder, className, value, onChange }) {
+  return (
+    <input
+      type="text"
+      placeholder={placeholder}
+      className={className}
+      value={value} 
+      onChange={onChange} 
+    />
   );
 }

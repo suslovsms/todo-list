@@ -3,21 +3,23 @@
     max-width: 300px;
     max-height: 400px;
     color: white;
-    background: rgba(0, 0, 0, 0.7); /* Сделал фон чуть темнее для контраста с текстом */
+    background: rgba(0, 0, 0, 0.7); 
     border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Добавил тень для объема */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Равномерное распределение контента */
-    padding: 20px; /* Отступы внутри */
+    justify-content: flex-start;
+    padding: 20px; 
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    min-height: 350px;
 }
 
+
 .body:hover {
-    transform: scale(1.05); /* Легкое увеличение при наведении */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Усиленная тень при наведении */
+    transform: scale(1.05); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); 
 }
 
 .icon {
@@ -25,37 +27,32 @@
     width: 80%;
     padding: 10px;
     border-radius: 20px;
-    object-fit: cover; /* Подгоняет изображение по размеру, сохраняя пропорции */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для изображения */
+    object-fit: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.body div {
-    font-size: 16px; /* Размер текста */
-    margin: 5px 0; /* Небольшие отступы между блоками */
-}
-
-.body div:nth-child(2) {
-    font-size: 20px; /* Более крупный шрифт для заголовка (title) */
+.title {
+    font-size: 20px; 
     font-weight: bold;
+    justify-content: start;
 }
 
-.body div:nth-child(3),
-.body div:nth-child(4) {
-    color: #ffcc00; /* Желтый цвет для дат */
+.date, .endDate {
+    color: #f7f5ec; 
 }
 
-.body div:nth-child(5) {
-    font-style: italic; /* Курсив для описания (description) */
-    color: #ddd;
+.description {
+    font-style: italic; 
+    color: #ffcc00;
 }
 
-.body div:nth-child(6) {
-    color: #ff6600; /* Оранжевый цвет для цены */
+.price {
+    color: #ff6600; 
     font-size: 18px;
     font-weight: bold;
 }
 
-.body div:nth-child(7) {
+.instructor {
     font-size: 14px;
-    color: #aaa; /* Более светлый цвет для инструктора */
+    color: #aaa; 
 }
