@@ -4,6 +4,7 @@ import cards from "./cardsData";
 import cardsStyle from "./cardList.module.css";
 import { SearchInput } from '../ui-lib/inputs/input';
 import ToggleButton from '../ui-lib/toggleButton/ToggleButton';
+import { Checkbox } from '../ui-lib/checkbox/checkbox';
 
 
 export function SearchInputBlock({ onSearch }) {
@@ -60,6 +61,10 @@ export function Cards() {
     setOpenCardId(prevId => (prevId === cardId ? null : cardId)); 
   };
 
+  const handleCheckboxClick = () => {
+
+  }
+
   const cardsElements = filteredCards.map((item) => (
     <Card 
       key={item.id}
@@ -77,6 +82,8 @@ export function Cards() {
 
   return (
     <div className={cardsStyle.container}>
+      <div>filter by name <Checkbox onClick={handleCheckboxClick} /></div>
+      
       <SearchInputBlock onSearch={handleSearch} /> 
       {cardsElements.length > 0 ? cardsElements : <p>Ничего не найдено</p>}
     </div>
