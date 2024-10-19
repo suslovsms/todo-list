@@ -7,6 +7,12 @@ import ToggleButton from '../ui-lib/toggleButton/ToggleButton';
 import { Checkbox } from '../ui-lib/checkbox/checkbox';
 
 
+function sortByName(array){
+  const sorted = array.sort((a,b) => a.title.localeCompare(b.title))
+  return sorted
+}
+
+
 export function SearchInputBlock({ onSearch }) {
   const [inputValue, setInputValue] = useState(""); 
 
@@ -40,13 +46,12 @@ export function SearchInputBlock({ onSearch }) {
 
 export function Cards() {
   const [openCardId, setOpenCardId] = useState(null);
-  const [filteredCards, setFilteredCards] = useState(cards); 
-
+  const [filteredCards, setFilteredCards] = useState(cards);
+  const [checked, setChecked] = useState(false);
 
   const handleSearch = (input) => {
     const trimmedInput = input.trim().toLowerCase(); 
     if (trimmedInput === "") {
-
       setFilteredCards(cards);
     } else {
 
@@ -57,13 +62,26 @@ export function Cards() {
     }
   };
 
+  const handleCheckboxClick = () => {
+
+    setChecked((checked) => {
+      const newChecked = !checked;
+
+      if (newChecked) {
+        const sortedCards = sortByName([...filteredCards]);
+        setFilteredCards(sortedCards);
+      } else {
+        setFilteredCards(cards);
+      }
+
+      return newChecked;
+    });
+  };
+
   const handleCardClick = (cardId) => {
     setOpenCardId(prevId => (prevId === cardId ? null : cardId)); 
   };
 
-  const handleCheckboxClick = () => {
-
-  }
 
   const cardsElements = filteredCards.map((item) => (
     <Card 
@@ -82,7 +100,7 @@ export function Cards() {
 
   return (
     <div className={cardsStyle.container}>
-      <div>filter by name <Checkbox onClick={handleCheckboxClick} /></div>
+      <div>filter by name <Checkbox style={cardsStyle.checkbox} checked={checked} onClick={handleCheckboxClick} /></div>
       
       <SearchInputBlock onSearch={handleSearch} /> 
       {cardsElements.length > 0 ? cardsElements : <p>Ничего не найдено</p>}
